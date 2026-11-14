@@ -50,7 +50,7 @@ h2{font-size:clamp(32px,5.5vw,56px);letter-spacing:-.045em;line-height:1.05;font
 @media(min-width:760px){.about{grid-template-columns:300px 1fr;align-items:center;padding:40px;gap:48px}}
 .ph{aspect-ratio:4/5;border-radius:22px;background:linear-gradient(160deg,var(--line),var(--bg));display:grid;place-items:center;color:var(--mute);font-size:13px;text-align:center;padding:14px}
 .about p{font-size:18px;color:var(--mute);margin-bottom:14px;max-width:600px}
-.about p:first-of-type{color:var(--fg);font-size:21px;letter-spacing:-.015em}
+.about .now{font-size:16px}.about .now a{color:var(--fg);text-decoration:underline;text-underline-offset:3px}.about p:first-of-type{color:var(--fg);font-size:21px;letter-spacing:-.015em}
 .cta{text-align:center;padding:96px 0 72px}
 .cta h2{font-size:clamp(48px,11vw,112px);letter-spacing:-.055em;margin-bottom:32px}
 .soc{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.ic{width:64px;height:64px;display:grid;place-items:center;transition:transform .2s}.ic:hover{transform:scale(1.1) translateY(-3px)}.ic img{width:58px;height:58px;display:block}
@@ -130,7 +130,7 @@ nav b,.svc b,.sub,.about p:first-of-type{letter-spacing:0}
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-<script id="data" type="application/json">{"videos":[{"title":"","cat":"","fmt":"v","url":"https://youtube.com/shorts/lPtLD8N9dzo","cover":""},{"title":"","cat":"","fmt":"v","url":"https://youtube.com/shorts/27zxrsGZfyI","cover":""},{"title":"","cat":"","fmt":"v","url":"https://youtube.com/shorts/mSfXmhZY9q8","cover":""},{"title":"","cat":"","fmt":"v","url":"https://youtube.com/shorts/SEGNXoE8lkw","cover":""},{"title":"","cat":"","fmt":"h","url":"https://youtu.be/AKvGcPfwRik","cover":""},{"title":"","cat":"","fmt":"h","url":"https://youtu.be/Gde5J2lefMo","cover":""}],"site":{"sub":"Editor de video para medios y creadores. Historias con ritmo, intención y algo que contar.","about":"Me gusta transformar ideas y grandes cantidades de material en historias con ritmo, intención y personalidad.\n\nTrabajé con medios, proyectos y creadores, adaptándome a distintos estilos y objetivos. Me interesa encontrar ese corte, momento o recurso que hace que alguien quiera seguir mirando.\n\nCombino edición, narrativa e IA para crear contenido que no solo se vea bien, sino que tenga algo que contar.","cv":"","li":"","wa":"541130715397","ig":"marcxs.mp4","mail":"marcosgrandolicontacto@gmail.com","photo":"foto-marcos.webp"}}</script>
+<script id="data" type="application/json">{"videos":[{"title":"","cat":"","fmt":"v","url":"https://youtube.com/shorts/lPtLD8N9dzo","cover":""},{"title":"","cat":"","fmt":"v","url":"https://youtube.com/shorts/27zxrsGZfyI","cover":""},{"title":"","cat":"","fmt":"v","url":"https://youtube.com/shorts/mSfXmhZY9q8","cover":""},{"title":"","cat":"","fmt":"v","url":"https://youtube.com/shorts/SEGNXoE8lkw","cover":""},{"title":"","cat":"","fmt":"h","url":"https://youtu.be/AKvGcPfwRik","cover":""},{"title":"","cat":"","fmt":"h","url":"https://youtu.be/Gde5J2lefMo","cover":""}],"site":{"sub":"Editor de video para medios y creadores. Historias con ritmo, intención y algo que contar.","about":"Me gusta transformar ideas y grandes cantidades de material en historias con ritmo, intención y personalidad.\n\nTrabajé con medios, proyectos y creadores, adaptándome a distintos estilos y objetivos. Me interesa encontrar ese corte, momento o recurso que hace que alguien quiera seguir mirando.\n\nCombino edición, narrativa e IA para crear contenido que no solo se vea bien, sino que tenga algo que contar.","cv":"","li":"https://www.linkedin.com/in/marcos-gabriel-grandoli-302009245/","wa":"541130715397","ig":"marcxs.mp4","mail":"marcosgrandolicontacto@gmail.com","photo":"foto-marcos.webp"}}</script>
 <nav><div class="w"><b>Marcos Grandoli</b><div><a href="#trabajos">Trabajos</a><a href="#sobre-mi">Sobre mí</a><a href="#cv">CV</a><a href="#contacto">Contacto</a><button id="tg" type="button" data-m="dark" aria-label="Cambiar a modo claro" title="Modo claro"><svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg><svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"></path></svg></button></div></div></nav>
 <div class="w">
 <div class="glow"></div><div class="bar" id="bar" style="width: 62.587576%;"></div>
@@ -174,15 +174,10 @@ nav b,.svc b,.sub,.about p:first-of-type{letter-spacing:0}
 </div>
 </section>
 
-<section id="cv" style="text-align:center">
-<h2 class="r in">Currículum</h2>
-<p class="lead r in">Mi experiencia, herramientas y proyectos en un solo documento.</p>
-<div class="btns r in"><a class="btn p" href="#cv" data-cv="">Abrir mi CV</a></div>
-</section>
-
 <section class="cta" id="contacto">
 <h2 class="r in">¡Charlemos! 👋</h2>
 <div class="soc r in"><a class="ic" id="icwa" href="https://wa.me/541130715397" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="img/whatsapp.webp" alt="" width="56" height="56" loading="lazy"></a><a class="ic" id="icig" href="https://instagram.com/marcxs.mp4" target="_blank" rel="noopener" aria-label="Instagram"><img src="img/instagram.webp" alt="" width="56" height="56" loading="lazy"></a><a class="ic" id="icli" href="#" target="_blank" rel="noopener" aria-label="LinkedIn" style="display:none"><img src="img/linkedin.webp" alt="" width="56" height="56" loading="lazy"></a><a class="ic" id="icgm" href="mailto:marcosgrandolicontacto@gmail.com" aria-label="Email"><img src="img/gmail.webp" alt="" width="56" height="56" loading="lazy"></a></div>
+<div class="btns r in" style="margin-top:28px"><a class="btn s" href="#cv" data-cv="">Ver CV</a></div>
 </section>
 </div>
 <footer>© 2026 Marcos Grandoli</footer>
@@ -203,7 +198,7 @@ m.innerHTML=`<div class="mb${v.fmt=="h"?" hz":""}">${e.s?`<iframe src="${e.s.rep
 m.onclick=function(ev){if(ev.target==m)m.remove()};document.body.appendChild(m)}
 function render(first){g.innerHTML="";D.videos.forEach(function(v,i){var c=document.createElement("div");c.className="card r"+(first?"":" in")+(v.fmt=="h"?" wide":"");var e0=emb(v.url),g0=`linear-gradient(170deg,${GC[i%8]})`,bg=v.cover?`url(/_blob/${v.cover}) center/cover`:(e0&&e0.i?`url(https://i.ytimg.com/vi/${e0.i}/hqdefault.jpg) center/cover,${g0}`:g0);c.innerHTML=`<i style="background:${bg}">${(emb(v.url)||{}).f&&!v.cover?`<video src="${esc(v.url)}#t=0.1" muted playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover"></video>`:""}</i><span class="pl">▶</span><div><small>${esc(v.cat)}</small>${esc(v.title)}</div>`;if(emb(v.url))c.onclick=function(){play(v)};tilt(c);g.appendChild(c)})}
 function applySite(){var s=D.site,d=s.wa.replace(/\D/g,"");document.querySelector(".sub").textContent=s.sub;
-document.querySelector(".about > div:last-child").innerHTML=s.about.split(/\n\s*\n/).map(function(t){return"<p>"+esc(t)+"</p>"}).join("");
+document.querySelector(".about > div:last-child").innerHTML=s.about.split(/\n\s*\n/).map(function(t){return"<p>"+esc(t)+"</p>"}).join("")+'<p class="now">Actualmente trabajo en <a href="https://www.instagram.com/capser.studio" target="_blank" rel="noopener">Capser</a>, un estudio de contenido.</p>';
 var ph=document.querySelector(".ph");if(s.photo){ph.textContent="";ph.style.background="url("+s.photo+") center/cover"}
 document.querySelectorAll("[data-cv]").forEach(function(a){if(s.cv){a.href=s.cv;a.target="_blank";a.rel="noopener"}else a.href="#cv"});var hc=!s.cv;document.querySelectorAll("[data-cv],a[href=\"#cv\"],#cv").forEach(function(a){a.style.display=hc?"none":""});
 document.querySelectorAll("a[href^=\"https://wa.me/\"]").forEach(function(a){a.href="https://wa.me/"+d});
