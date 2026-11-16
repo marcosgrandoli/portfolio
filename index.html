@@ -54,7 +54,7 @@ h2{font-size:clamp(32px,5.5vw,56px);letter-spacing:-.045em;line-height:1.05;font
 .cta{text-align:center;padding:96px 0 72px}
 .cta h2{font-size:clamp(48px,11vw,112px);letter-spacing:-.055em;margin-bottom:32px}
 .em{width:.85em;height:.85em;vertical-align:-.08em;display:inline-block}#gw .em{width:1.15em;height:1.15em;vertical-align:-.2em;margin-right:2px}.cl{text-align:center;margin:-8px 0 30px}.cl small{display:block;color:var(--mute);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}.cl p{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 10px}.cl span{font-size:clamp(14px,2.2vw,17px);font-weight:500;padding:8px 16px;border-radius:99px;background:var(--surf);border:1px solid var(--line);white-space:nowrap}.cl a{color:inherit;text-decoration:none}.soc{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.ic{width:64px;height:64px;display:grid;place-items:center;transition:transform .2s}.ic:hover{transform:scale(1.1) translateY(-3px)}.ic img{width:58px;height:58px;display:block}
-footer{border-top:1px solid var(--line);padding:22px 0;color:var(--mute);font-size:12px;text-align:center}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--mute);font-size:12px;text-align:center}footer span{display:block;margin-top:6px}.fm{color:var(--fg,inherit);font-size:14px;font-weight:500;text-decoration:none;letter-spacing:.2px}.fm:hover{text-decoration:underline}
 .r{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.r.in{opacity:1;transform:none}
 body{overflow-x:hidden}.w{position:relative;z-index:1}
 .glow{position:absolute;top:-120px;left:50%;width:min(900px,100vw);height:600px;transform:translateX(-50%);background:radial-gradient(closest-side,var(--acc),transparent);opacity:.2;filter:blur(60px);animation:fl 10s ease-in-out infinite alternate;pointer-events:none;z-index:0}
@@ -181,7 +181,7 @@ nav b,.svc b,.sub,.about p:first-of-type{letter-spacing:0}
 <div class="btns r in" style="margin-top:28px"><a class="btn s" href="#cv" data-cv="">Ver CV</a></div>
 </section>
 </div>
-<footer>© 2026 Marcos Grandoli</footer>
+<footer><a class="fm" href="mailto:contacto@marcosgrandoli.com">contacto@marcosgrandoli.com</a><span>© 2026 Marcos Grandoli</span></footer>
 <script>
 var CV_URL="";
 document.querySelectorAll("[data-cv]").forEach(function(a){if(CV_URL){a.href=CV_URL;a.target="_blank";a.rel="noopener"}else{a.href="#cv"}});
